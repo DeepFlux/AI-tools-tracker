@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Tools Tracker</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --border: #2a2e37;
+      --text: #e6e8eb;
+      --muted: #9aa1ac;
+      --accent: #6ea8fe;
+      --accent-soft: rgba(110, 168, 254, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px 20px 80px;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 4px;
+    }
+
+    .sub {
+      color: var(--muted);
+      margin-bottom: 32px;
+      font-size: 0.95rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: #1c2027;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .name {
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>AI Tools Tracker</h1>
+    <div class="sub">Internal tracker of AI tools currently being built. Edit this file (or the table rows) to add new
+      entries.</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tool</th>
+          <th>Description</th>
+          <th>Link</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Content Flywheel</td>
+          <td>Content generation tool.</td>
+          <td><a href="https://kotak-flywheel-fe-feature-test-261390063994.asia-south2.run.app/" target="_blank"
+              rel="noopener">Open</a></td>
+          <td><span class="status">In progress</span></td>
+        </tr>
+        <tr>
+          <td class="name">Media Flow</td>
+          <td>AI-powered TV media campaign management platform, built with Wipro, Havas and DS Group.</td>
+          <td><a href="https://media-management-fe-702075889747.asia-south2.run.app/login" target="_blank"
+              rel="noopener">Open</a>
+          </td>
+          <td><span class="status">In progress</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>Add a new row inside &lt;tbody&gt; in index.html to track another tool.</footer>
+  </div>
+</body>
+
+</html>
